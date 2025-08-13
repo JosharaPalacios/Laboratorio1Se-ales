@@ -1,2 +1,2 @@
-# Laboratorio1Se-ales
+# Laboratorio 1 Señales
 
