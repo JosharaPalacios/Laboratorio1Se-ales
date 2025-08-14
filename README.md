@@ -1,4 +1,6 @@
-# Laboratorio 1 Señales
+# Laboratorio 1 de Procesamiento digital de señales
+## Análisis estadístico de la señal 
+
 ## Parte A
 import numpy as np
 
