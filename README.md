@@ -66,3 +66,4 @@ Se observan **picos pronunciados** que corresponden a los **complejos QRS** del 
 Entre los picos, se distinguen zonas de menor variación que representan las **ondas P y T**.  
 
 Asimismo, se evidencia la presencia de **ruido** y variaciones irregulares en la línea base, lo cual es característico de señales biomédicas reales. Este ruido puede deberse a factores externos, **interferencias eléctricas** o **movimiento del paciente**.  
+jjhigty 
