@@ -26,7 +26,7 @@ En esta práctica:
 ## Código en Python (Google Colab)
 
 ```python
-# Importación de librerías necesarias
+# 1.  Importación de librerías necesarias
 import numpy as np                  # Para manejo de arreglos y cálculos matemáticos
 import matplotlib.pyplot as plt     # Para graficar la señal
 !pip install wfdb                   # Instalación de la librería wfdb para leer señales biomédicas
@@ -51,3 +51,18 @@ plt.ylabel("Voltaje(V)")             # Etiqueta del eje Y
 plt.axis([3.5666e7,3.5668e7,-1500,2000]) # Límite de ejes para enfocar la región de interés
 plt.grid()                           # Mostrar cuadrícula para mejor lectura
 plt.show()
+
+<img width="609" height="438" alt="image" src="https://github.com/user-attachments/assets/494a2093-a2ce-43f4-8065-e85734e0ba0c" />
+
+## Interpretación de la gráfica
+
+La gráfica anterior muestra un segmento de la señal fisiológica descargada desde la base de datos **PhysioNet**.  
+
+- En el **eje X** se representa el tiempo (segundos).  
+- En el **eje Y** se muestra el voltaje (microvoltios).  
+
+Se observan **picos pronunciados** que corresponden a los **complejos QRS** del electrocardiograma, los cuales presentan una amplitud considerable en comparación con el resto de la señal.  
+
+Entre los picos, se distinguen zonas de menor variación que representan las **ondas P y T**.  
+
+Asimismo, se evidencia la presencia de **ruido** y variaciones irregulares en la línea base, lo cual es característico de señales biomédicas reales. Este ruido puede deberse a factores externos, **interferencias eléctricas** o **movimiento del paciente**.  
