@@ -26,7 +26,7 @@ En esta práctica:
 ## Código en Python (Google Colab)
 
 ```python
-# 1.  Importación de librerías necesarias
+# Importación de librerías necesarias
 import numpy as np                  # Para manejo de arreglos y cálculos matemáticos
 import matplotlib.pyplot as plt     # Para graficar la señal
 !pip install wfdb                   # Instalación de la librería wfdb para leer señales biomédicas
