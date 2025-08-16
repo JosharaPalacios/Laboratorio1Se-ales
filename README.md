@@ -1,7 +1,22 @@
-# Análisis Estadístico de la Señal
-
+# Laboratorio 1 - Análisis Estadístico de la Señal
+**Universidad Militar Nueva Granada**  
 **Asignatura:** Procesamiento Digital de Señales  
-**Título de la práctica:** Análisis estadístico de la señal  
+**Estudiantes:** [Maria Jose Peña, Joshara Valentina Palacios, Lina Marcela Pabuena]  
+**Fecha:** Agosto 2025  
+**Asignatura:** Procesamiento Digital de Señales  
+**Título de la práctica:** Análisis estadístico de la señal 
+
+## Objetivos 
+- Identificar los estadísticos que describen una señal biomédica.  
+- Obtener dichos estadísticos a partir de algoritmos programados en Python.  
+- Comparar el cálculo de estadísticos hecho de forma manual (programando las fórmulas) con el uso de funciones predefinidas.  
+- Importar, graficar y manipular señales fisiológicas en Python utilizando librerías como *matplotlib*.  
+- Generar y capturar señales fisiológicas con (STM32 o DAQ).  
+- Analizar el efecto del ruido en las señales mediante el cálculo de la relación señal-ruido (SNR).  
+- Utilizar GitHub como herramienta de documentación y colaboración para reportar los resultados.  
+
+
+# Análisis Estadístico de la Señal
 
 ## Procedimiento y método
 
@@ -55,8 +70,9 @@ plt.show()
 ## Gráfica de la señal ECG
 
 <p align="center">
-  <img src="images/grafica_ecg.png" alt="Señal ECG" width="600"/>
+<img width="758" height="540" alt="señal11" src="https://github.com/user-attachments/assets/a300c2d4-4562-4c9f-bf4d-69e2726b4d73" />
 ``` </pre>
+
 ## Interpretación de la gráfica
 
 La gráfica anterior muestra un segmento de la señal fisiológica descargada desde la base de datos **PhysioNet**.  
