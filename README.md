@@ -57,7 +57,7 @@ plt.show()
 <p align="center">
   <img src="images/grafica_ecg.png" alt="Señal ECG" width="600"/>
 </p>
-
+```
 ## Interpretación de la gráfica
 
 La gráfica anterior muestra un segmento de la señal fisiológica descargada desde la base de datos **PhysioNet**.  
