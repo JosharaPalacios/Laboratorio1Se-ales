@@ -24,8 +24,8 @@ En esta práctica:
    - **Curtosis**: mide el grado de concentración de los valores de la señal en torno a la media (si tiene colas más o menos pesadas que una distribución normal).
 
 ## Código en Python (Google Colab)
-
-```python
+<pre> ```
+python
 # Importación de librerías necesarias
 import numpy as np                  # Para manejo de arreglos y cálculos matemáticos
 import matplotlib.pyplot as plt     # Para graficar la señal
@@ -56,8 +56,7 @@ plt.show()
 
 <p align="center">
   <img src="images/grafica_ecg.png" alt="Señal ECG" width="600"/>
-</p>
-```
+``` </pre>
 ## Interpretación de la gráfica
 
 La gráfica anterior muestra un segmento de la señal fisiológica descargada desde la base de datos **PhysioNet**.  
