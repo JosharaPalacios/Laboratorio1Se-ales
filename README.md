@@ -246,12 +246,75 @@ El **histograma** permitió visualizar la distribución de amplitudes, donde la 
 La **función de probabilidad** confirmó esta tendencia al mostrar que las amplitudes extremas tienen baja probabilidad de ocurrencia. 
 Finalmente, la **curtosis** indicó que la distribución es más apuntada que una normal estándar, reflejando la presencia de valores extremos en la señal.
 
+# PARTE B
+
+En esta parte del laboratorio nos dirigimos al laboratorio y realizamos la adquisición de una señal fisiológica utilizando un **generador de señales** conectado a un sistema de adquisición de datos (**DAQ**).  
+La señal fue capturada y exportada en formato `.csv`, lo que permitió almacenarla y procesarla posteriormente en **Google Colab** mediante Python.  
+
+# Código en Python (Google Colab)
+
+## Descarga de la señal
+ <pre> ```
+python
+    
+from google.colab import drive
+drive.mount('/content/drive')
+import pandas as pd
+ruta = "/content/drive/MyDrive/GITHUB/medicion1.csv"
+df = pd.read_csv(ruta)
+df.head()
+``` </pre>
+## Almacenamiento de la señal en una varibale
+ <pre> ```
+python
+tiempo = df.iloc[:,0].values
+senal2 = df.iloc[:,1].values
+``` </pre>
+## Grafica y datos estadisticos por medio de funciones 
+ <pre> ```
+python
+    
+import matplotlib.pyplot as plt
+import numpy as np
+from scipy.stats import kurtosis
+import matplotlib.pyplot as plt
+import seaborn as sns
+    
+plt.figure(figsize=(10,4))
+plt.plot(senal2)
+plt.title("Señal fisiológica medida en laboratorio")
+plt.xlabel("Muestras")
+plt.ylabel("Amplitud")
+plt.grid(True)
+plt.show()
+
+media = np.mean(senal2)
+desv = np.std(senal2)
+cv = desv / media
+curt = kurtosis(senal2)
+
+print("Media:", media)
+print("Desviación estándar:", desv)
+print("Coeficiente de variación:", cv)
+print("Curtosis:", curt)
+
+# Histograma
+plt.hist(senal2, bins=50, density=True, alpha=0.7, color='blue')
+plt.title("Histograma de la señal medida")
+plt.xlabel("Amplitud")
+plt.ylabel("Frecuencia")
+plt.show()
 
 
-
-
-
-
+# Estimación de la densidad de probabilidad (PDF)
+plt.figure(figsize=(8,4))
+sns.kdeplot(senal2, fill=True, color="red", alpha=0.6)
+plt.title("Función de probabilidad de la señal")
+plt.xlabel("Amplitud")
+plt.ylabel("Densidad de probabilidad")
+plt.grid(True)
+plt.show()
+``` </pre>
 
 
 
