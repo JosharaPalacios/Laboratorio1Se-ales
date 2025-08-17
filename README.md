@@ -150,6 +150,7 @@ print(f"Curtosis = {curtosis}")
 ``` </pre>
 ## Resultados del analisis estadisticos 
 ## Histograma
+<p align="center">
 <img width="686" height="560" alt="Captura de pantalla 2025-08-16 001720" src="https://github.com/user-attachments/assets/c63a407c-0d26-4663-a75c-06a09b496e3f" />
 
 ## Resultados numéricos
@@ -160,7 +161,9 @@ print(f"Curtosis = {curtosis}")
 - **Curtosis:** 122.85882529006771  
 
 ## Función de probabilidad 
-<img width="732" height="565" alt="Captura de pantalla 2025-08-16 002834" src="https://github.com/user-attachments/assets/fb765971-eac3-465b-b67e-e6917cedbbcb" />
+<p align="center">
+<img width="731" height="555" alt="Captura de pantalla 2025-08-17 001331" src="https://github.com/user-attachments/assets/bc471a6b-8ea3-471d-bd55-a811e72b6415" />
+
 
 ## Descarga y grafica de la señal sin funciones
 <pre> ```
@@ -306,7 +309,7 @@ plt.ylabel("Frecuencia")
 plt.show()
 
 
-# Estimación de la densidad de probabilidad (PDF)
+# Estimación de la densidad de probabilidad 
 plt.figure(figsize=(8,4))
 sns.kdeplot(senal2, fill=True, color="red", alpha=0.6)
 plt.title("Función de probabilidad de la señal")
@@ -315,7 +318,9 @@ plt.ylabel("Densidad de probabilidad")
 plt.grid(True)
 plt.show()
 ``` </pre>
+
 ## Resultados, gráfica de la señal 
+<p align="center">
 <img width="1068" height="486" alt="Captura de pantalla 2025-08-16 235352" src="https://github.com/user-attachments/assets/d1032b27-280d-48b5-b40d-6c9eb0e07bab" />
 
 ## Resultados estadisticos de la señal fisiologica 
@@ -326,9 +331,11 @@ plt.show()
 - Curtosis: 4.689155028469519
 
 ## Histograma
+<p align="center">
 <img width="692" height="556" alt="Captura de pantalla 2025-08-16 235301" src="https://github.com/user-attachments/assets/16286fc9-2c26-4497-b59e-bed6386c8aea" />
 
 ## Función de probabilidad
+<p align="center">
 <img width="863" height="488" alt="Captura de pantalla 2025-08-16 235421" src="https://github.com/user-attachments/assets/4a3b16be-dd19-4d60-9b0b-ba242ce5cc8d" />
 
 ## Graficas y datos estadisticos por medio de funciones 
@@ -397,8 +404,33 @@ plt.ylabel("Probabilidad")
 plt.grid(True)
 plt.show()
 ``` </pre>
+## Resultados estadisticos de la señal fisiologica
+- Media (manual): 1.2196760663788881
+- Desviación estándar (manual): 0.40319355028341297
+- Coeficiente de variación (manual): 0.33057429050031245
+- Curtosis (manual): 7.5361408434029675
 
+## Histograma
+<p align="center">
+<img width="697" height="557" alt="Captura de pantalla 2025-08-16 235447" src="https://github.com/user-attachments/assets/bb5e2ea5-9efa-45c2-83bf-58d84e3c1961" />
 
+## Función de probabilidad
+<p align="center">
+<img width="701" height="568" alt="Captura de pantalla 2025-08-16 235511" src="https://github.com/user-attachments/assets/9ad1fd3c-98aa-479a-ad4c-c782b8db30b5" />
+
+## Análisis de resultados – Parte B
+
+En la Parte B se trabajó con la señal adquirida en el laboratorio mediante un generador de señales y un sistema de adquisición de datos (DAQ). 
+La señal fue exportada en formato `.csv` e importada en Python para su posterior análisis estadístico.
+
+Al observar la gráfica de la señal registrada, se evidenció un comportamiento más irregular que en la señal descargada en la Parte A, lo cual es coherente con el hecho de tratarse de una adquisición experimental real. 
+Los valores de la **media** se mantuvieron cercanos a cero, indicando que la señal oscila alrededor de un punto de referencia estable. 
+La **desviación estándar** resultó mayor en comparación con la señal de la Parte A, lo que refleja una mayor dispersión de los datos debido al ruido presente en la adquisición. 
+Esto se confirmó con el **coeficiente de variación**, que mostró un incremento en la variabilidad relativa de la señal.
+
+El **histograma** de amplitudes mostró una distribución con mayor anchura y menor concentración alrededor de la media, en contraste con la distribución más compacta de la Parte A. 
+La **función de probabilidad** confirmó que las amplitudes extremas ocurren con una frecuencia mayor a la esperada, lo que evidencia la influencia del ruido en la adquisición. 
+Por último, la **curtosis** indicó que la distribución presenta colas más pronunciadas, asociadas a la presencia de valores atípicos o picos de alta amplitud.
 
 
 
