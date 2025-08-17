@@ -432,5 +432,6 @@ El **histograma** de amplitudes mostró una distribución con mayor anchura y me
 La **función de probabilidad** confirmó que las amplitudes extremas ocurren con una frecuencia mayor a la esperada, lo que evidencia la influencia del ruido en la adquisición. 
 Por último, la **curtosis** indicó que la distribución presenta colas más pronunciadas, asociadas a la presencia de valores atípicos o picos de alta amplitud.
 
+# PARTE C
 
 
