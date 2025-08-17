@@ -315,7 +315,21 @@ plt.ylabel("Densidad de probabilidad")
 plt.grid(True)
 plt.show()
 ``` </pre>
+## Resultados, gráfica de la señal 
+<img width="1068" height="486" alt="Captura de pantalla 2025-08-16 235352" src="https://github.com/user-attachments/assets/d1032b27-280d-48b5-b40d-6c9eb0e07bab" />
 
+## Resultados estadisticos de la señal fisiologica 
+
+- Media: 1.219676066378888
+- Desviación estándar: 0.4011725172544121
+- Coeficiente de variación: 0.3289172660782452
+- Curtosis: 4.689155028469519
+
+## Histograma
+<img width="692" height="556" alt="Captura de pantalla 2025-08-16 235301" src="https://github.com/user-attachments/assets/16286fc9-2c26-4497-b59e-bed6386c8aea" />
+
+## Función de probabilidad
+<img width="863" height="488" alt="Captura de pantalla 2025-08-16 235421" src="https://github.com/user-attachments/assets/4a3b16be-dd19-4d60-9b0b-ba242ce5cc8d" />
 
 
 
