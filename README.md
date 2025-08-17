@@ -270,7 +270,7 @@ python
 tiempo = df.iloc[:,0].values
 senal2 = df.iloc[:,1].values
 ``` </pre>
-## Grafica y datos estadisticos por medio de funciones 
+## Graficas y datos estadisticos por medio de funciones 
  <pre> ```
 python
     
@@ -331,7 +331,72 @@ plt.show()
 ## Función de probabilidad
 <img width="863" height="488" alt="Captura de pantalla 2025-08-16 235421" src="https://github.com/user-attachments/assets/4a3b16be-dd19-4d60-9b0b-ba242ce5cc8d" />
 
+## Graficas y datos estadisticos por medio de funciones 
+ <pre> ```
+python
+    import matplotlib.pyplot as plt
 
+n = len(senal2)
+
+
+# Media (valor promedio)
+
+suma = 0
+for x in senal2:
+    suma += x
+media_manual = suma / n
+
+# Desviación estándar
+
+suma_cuadrados = 0
+for x in senal2:
+    suma_cuadrados += (x - media_manual)**2
+desv_manual = (suma_cuadrados / (n-1))**0.5   # uso n-1 para ser insesgado
+
+
+# Coeficiente de variación
+
+cv_manual = desv_manual / media_manual if media_manual != 0 else float("inf")
+
+
+# Curtosis
+
+suma_cuarta = 0
+for x in senal2:
+    suma_cuarta += (x - media_manual)**4
+curtosis_manual = (suma_cuarta / n) / (desv_manual**4)
+
+
+# Resultados
+
+print("Media (manual):", media_manual)
+print("Desviación estándar (manual):", desv_manual)
+print("Coeficiente de variación (manual):", cv_manual)
+print("Curtosis (manual):", curtosis_manual)
+
+# Histograma
+
+plt.hist(senal2, bins=50, color="skyblue", edgecolor="black")
+plt.title("Histograma de la señal (manual)")
+plt.xlabel("Amplitud")
+plt.ylabel("Frecuencia")
+plt.grid(True)
+plt.show()
+
+# Función de probabilidad 
+
+import numpy as np
+
+conteo, bordes = np.histogram(senal2, bins=50, density=True)
+centros = (bordes[:-1] + bordes[1:]) / 2
+
+plt.plot(centros, conteo, marker="o", color="red")
+plt.title("Función de probabilidad (manual)")
+plt.xlabel("Amplitud")
+plt.ylabel("Probabilidad")
+plt.grid(True)
+plt.show()
+``` </pre>
 
 
 
