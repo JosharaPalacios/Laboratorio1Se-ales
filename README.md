@@ -437,7 +437,8 @@ Por último, la **curtosis** indicó que la distribución presenta colas más pr
 
 Esta relación es entre la amplitud de la señal y la amplitud del ruido, esta generalmente está expresada en decibelios, se calcula mediante una sencilla ecuación.
 
-![Ecuación SNR](imagenes/Ecuación.png)
+<p align="center">
+<img width="308" height="77" alt="Captura de pantalla 2025-08-17 205638" src="https://github.com/user-attachments/assets/f0a89efe-d47d-4061-8341-f3f5d7fd3d71" />
 
 
 
