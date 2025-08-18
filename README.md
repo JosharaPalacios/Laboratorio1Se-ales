@@ -435,7 +435,9 @@ Por último, la **curtosis** indicó que la distribución presenta colas más pr
 
 ## Relación Señal Ruido (SNR)
 
-Esta relación es entre la amplitud de la señal y la amplitud del ruido, esta generalmente está expresada en decibelios, se calcula mediante una sencilla ecuación. 
+Esta relación es entre la amplitud de la señal y la amplitud del ruido, esta generalmente está expresada en decibelios, se calcula mediante una sencilla ecuación.
+
+![Ecuación SNR](imagenes/Ecuación.png)
 
 
 
