@@ -439,17 +439,17 @@ Esta relación es entre la amplitud de la señal y la amplitud del ruido. Genera
 
 ![Ecuación SNR](imagenes/Ecuación.png)
 
-# Análisis de la señal con adición de ruido y cálculo de la relación señal-ruido (SNR)
+## Análisis de la señal con adición de ruido y cálculo de la relación señal-ruido (SNR)
 
 Para esta parte del laboratorio se trabajó sobre la señal fisiológica adquirida del generador de señales biológicas de la parte B. Se introdujeron tres tipos de ruido simulado para alterar la señal con el fin de analizar cómo estos afectan sus características estadísticas y la calidad de la extracción de datos. 
 
 Se consideraron tres tipos de ruido o de contaminación:
 
-# RUIDO GAUSSIANO:
+## RUIDO GAUSSIANO:
 
 Es un tipo de ruido aleatorio que sigue una distribución normal o gaussiana. Se caracteriza por una media y una desviación estándar [2]. 
 
-# 1. Ruido Gaussiano
+## 1. Ruido Gaussiano
 
 ruido_gauss = np.random.normal(0, np.std(senal)*0.2, len(senal))  
 senal_gauss = senal + ruido_gauss  
@@ -463,17 +463,17 @@ plt.ylabel("Amplitud")
 plt.grid(True)  
 plt.show()  
 
-# Análisis ruido Gaussiano
+## Análisis ruido Gaussiano
 
 En esta adición de ruido no se desplazó la línea base y el nivel del ruido escala con la señal. El SNR se calculó con la señal limpia respecto al ruido añadido. Este ECG estaría simulando el ruido de los amplificadores, que son interferencias pequeñas y distribuidas. Se puede apreciar claramente en las ondas P y T, que son de baja amplitud y se ven afectadas. 
 
 El valor resultante del ruido (24.22 dB) indica que la señal inicial del ECG aún es clara, ya que es un valor alto.
 
-# RUIDO IMPULSO:
+## RUIDO IMPULSO:
 
 Se manifiesta en ráfagas breves y de alta amplitud. Se caracteriza por tener picos repentinos que causan una interferencia significativa [3].
 
-# 2. Ruido de Impulso
+## 2. Ruido de Impulso
 
 ruido_impulso = np.zeros(len(senal))  
 num_impulsos = int(0.01 * len(senal))   # 1% de muestras con impulsos  
@@ -491,17 +491,17 @@ plt.ylabel("Amplitud")
 plt.grid(True)  
 plt.show()  
 
-# Análisis ruido impulso
+## Análisis ruido impulso
 
 Debido a los picos se puede ver una anormalidad más fácilmente en una de las muestras. Este ruido podría simular malas conexiones del ECG, por ejemplo, electrodos mal conectados, movimiento brusco de los cables u otros factores. También se puede interpretar como complejos falsos.  
 
 El valor resultante del ruido (14.32 dB) indica que el ruido está más presente en la señal. Este ECG está bastante afectado por los picos tan abruptos que generan complejos falsos o falsos eventos eléctricos del corazón. 
 
-# RUIDO ARTEFACTO:
+## RUIDO ARTEFACTO:
 
 Este ruido es una perturbación no deseada causada por factores externos que pueden ser biológicos, electrónicos o generados por el mismo sistema de adquisición. En el ECG puede deberse a la actividad muscular, al parpadeo o a la interferencia electromagnética del entorno [4].
 
-# 3. Ruido tipo Artefacto
+## 3. Ruido tipo Artefacto
 # (simulado con ondas senoidales lentas + un offset)
 
 frecuencia_art = 0.01  
@@ -517,13 +517,13 @@ plt.ylabel("Amplitud")
 plt.grid(True)  
 plt.show()  
 
-# Análisis del ruido tipo artefacto
+## Análisis del ruido tipo artefacto
 
 Este ruido tipo artefacto en el código simula una "onda senoidal lenta" que está superpuesta en el ECG original, lo que genera una oscilación de baja frecuencia. Este patrón se podría interpretar como fenómenos respiratorios normales del tórax, impedancia de la piel o desplazamientos del electrodo. En esta gráfica se dificulta la clara identificación de las ondas P y T y se aprecia una modificación en el complejo QRS. Aunque no se distorsiona de forma drástica, sí se compromete el análisis de las tendencias y se genera error en la interpretación clínica, lo cual es importante para el diagnóstico de enfermedades cardíacas.  
 
 Respecto al ruido resultante (29.22 dB), este es el mejor comparado con los dos anteriores, porque quiere decir que la señal está más presente que el ruido. La morfología del ECG no cambia de manera drástica aunque la línea base esté afectada.  
 
-# Análisis de los resultados - Parte C
+## Análisis de los resultados - Parte C
 
 Esta simulación permitió observar cómo el ruido degrada la calidad de la señal según sus características estadísticas. También permitió identificar de qué tipo de ruido se trata para tener precaución en futuros análisis de señales electrocardiográficas.
 
