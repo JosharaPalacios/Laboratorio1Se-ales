@@ -429,7 +429,7 @@ Esto se confirmó con el **coeficiente de variación**, que mostró un increment
 
 El **histograma** de amplitudes mostró una distribución con mayor anchura y menor concentración alrededor de la media, en contraste con la distribución más compacta de la Parte A. 
 La **función de probabilidad** confirmó que las amplitudes extremas ocurren con una frecuencia mayor a la esperada, lo que evidencia la influencia del ruido en la adquisición. 
-Por último, la **curtosis** indicó que la distribución presenta colas más pronunciadas, asociadas a la presencia de valores atípicos o picos de alta amplitud.
+Por último, la **curtosis** indicó que la distribución presenta colas más pronunciadas, asociadas a la presencia de valores atípicos o/y picos de alta amplitud.
 
 # PARTE C
 
