@@ -450,7 +450,8 @@ Se consideraron tres tipos de ruido o de contaminación:
 Es un tipo de ruido aleatorio que sigue una distribución normal o gaussiana. Se caracteriza por una media y una desviación estándar [2]. 
 
 ## 1. Ruido Gaussiano
-
+<pre> ```
+python
 ruido_gauss = np.random.normal(0, np.std(senal)*0.2, len(senal))  
 senal_gauss = senal + ruido_gauss  
 snr_gauss = calcular_snr(senal, ruido_gauss)  
@@ -474,7 +475,8 @@ El valor resultante del ruido (24.22 dB) indica que la señal inicial del ECG a�
 Se manifiesta en ráfagas breves y de alta amplitud. Se caracteriza por tener picos repentinos que causan una interferencia significativa [3].
 
 ## 2. Ruido de Impulso
-
+<pre> ```
+python
 ruido_impulso = np.zeros(len(senal))  
 num_impulsos = int(0.01 * len(senal))   # 1% de muestras con impulsos  
 indices = np.random.choice(len(senal), num_impulsos, replace=False)  
@@ -502,6 +504,9 @@ El valor resultante del ruido (14.32 dB) indica que el ruido está más presente
 Este ruido es una perturbación no deseada causada por factores externos que pueden ser biológicos, electrónicos o generados por el mismo sistema de adquisición. En el ECG puede deberse a la actividad muscular, al parpadeo o a la interferencia electromagnética del entorno [4].
 
 ## 3. Ruido tipo Artefacto
+
+<pre> ```
+python
 # (simulado con ondas senoidales lentas + un offset)
 
 frecuencia_art = 0.01  
