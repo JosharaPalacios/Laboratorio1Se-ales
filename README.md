@@ -1,7 +1,7 @@
 # Laboratorio 1 - Análisis Estadístico de la Señal
 **Universidad Militar Nueva Granada**  
 **Asignatura:** Procesamiento Digital de Señales  
-**Estudiantes:** [Maria Jose Peña, Joshara Valentina Palacios, Lina Marcela Pabuena]  
+**Estudiantes:** [Maria Jose Peña Velandia, Joshara Valentina Palacios, Lina Marcela Pabuena]  
 **Fecha:** Agosto 2025  
 **Asignatura:** Procesamiento Digital de Señales  
 **Título de la práctica:** Análisis estadístico de la señal 
@@ -420,7 +420,7 @@ plt.show()
 
 ## Análisis de resultados – Parte B
 
-En la parte B del laboratorio se adquirió la señal mediante un generador de señales y un DAQ  (Data Acquisition System) O Sistema de Adquisición de Datos, para la conexión se inició con la lectura manual del equipo, en donde se identificaron las entradas necesarias para el montaje. Posterior a esto, se implementó dos jumpers, uno para la terminal de tierra (GND) y otro para la entrada analógica (AI, Analog Input), que es la encargada de recibir la señal proveniente del generador de señales biológicas. Al tener asegurado este proceso, se procedió a descargar e instalar el driver correspondiente, ya con el software asociado se configuraron los parámetros de adquisición de datos en donde se estableció la captura de 100 datos con el fin de evitar el registro excesivo de datos y obtener una lectura más clara. Finalmente, los datos obtenidos se exportaron en un formato `.csv` y se almacenaron para el análisis y elaboración de gráficas correspondientes.
+En la parte B del laboratorio se adquirió la señal mediante un generador de señales y un **DAQ  (Data Acquisition System) O Sistema de Adquisición de Datos**, para la conexión se inició con la lectura manual del equipo, en donde se identificaron las entradas necesarias para el montaje. Posterior a esto, se implementó dos jumpers, uno para la terminal de tierra (GND) y otro para la entrada analógica (AI, Analog Input), que es la encargada de recibir la señal proveniente del generador de señales biológicas. Al tener asegurado este proceso, se procedió a descargar e instalar el driver correspondiente, ya con el software asociado se configuraron los parámetros de adquisición de datos en donde se estableció la captura de 100 datos con el fin de evitar el registro excesivo de datos y obtener una lectura más clara. Finalmente, los datos obtenidos se exportaron en un formato `.csv` y se almacenaron para el análisis y elaboración de gráficas correspondientes.
 
 Al observar la gráfica de la señal registrada, se evidenció un comportamiento más irregular que en la señal descargada en la Parte A, lo cual es coherente con el hecho de tratarse de una adquisición experimental real. 
 Los valores de la **media** se mantuvieron cercanos a cero, indicando que la señal oscila alrededor de un punto de referencia estable. 
@@ -433,4 +433,12 @@ Por último, la **curtosis** indicó que la distribución presenta colas más pr
 
 # PARTE C
 
+## Relación Señal Ruido (SNR)
+
+Esta relación es entre la amplitud de la señal y la amplitud del ruido, esta generalmente está expresada en decibelios, se calcula mediante una sencilla ecuación. 
+
+
+
+
+# Análisis de la señal con adición de ruido y cálculo de la relación señal-ruido (SNR)
 
