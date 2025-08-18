@@ -451,7 +451,7 @@ Es un tipo de ruido aleatorio que sigue una distribución normal o gaussiana. Se
 
 ## 1. Ruido Gaussiano
 <pre> ```
-python
+
 ruido_gauss = np.random.normal(0, np.std(senal)*0.2, len(senal))  
 senal_gauss = senal + ruido_gauss  
 snr_gauss = calcular_snr(senal, ruido_gauss)  
@@ -463,6 +463,7 @@ plt.xlabel("Muestras")
 plt.ylabel("Amplitud")  
 plt.grid(True)  
 plt.show()  
+   ``` </pre>
 
 ## Análisis ruido Gaussiano
 
@@ -476,7 +477,7 @@ Se manifiesta en ráfagas breves y de alta amplitud. Se caracteriza por tener pi
 
 ## 2. Ruido de Impulso
 <pre> ```
-python
+
 ruido_impulso = np.zeros(len(senal))  
 num_impulsos = int(0.01 * len(senal))   # 1% de muestras con impulsos  
 indices = np.random.choice(len(senal), num_impulsos, replace=False)  
@@ -492,6 +493,7 @@ plt.xlabel("Muestras")
 plt.ylabel("Amplitud")  
 plt.grid(True)  
 plt.show()  
+   ``` </pre>
 
 ## Análisis ruido impulso
 
@@ -506,7 +508,7 @@ Este ruido es una perturbación no deseada causada por factores externos que pue
 ## 3. Ruido tipo Artefacto
 
 <pre> ```
-python
+
 # (simulado con ondas senoidales lentas + un offset)
 
 frecuencia_art = 0.01  
@@ -521,6 +523,7 @@ plt.xlabel("Muestras")
 plt.ylabel("Amplitud")  
 plt.grid(True)  
 plt.show()  
+   ``` </pre>
 
 ## Análisis del ruido tipo artefacto
 
