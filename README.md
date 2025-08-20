@@ -437,7 +437,7 @@ Por último, la **curtosis** indicó que la distribución presenta colas más pr
 
 Esta relación es entre la amplitud de la señal y la amplitud del ruido. Generalmente está expresada en decibelios y se calcula mediante una sencilla ecuación. Implementar esta ecuación es muy importante para analizar una señal de ECG, en donde el ruido no deseado interfiere con la señal de interés. Cuando esta señal tiene valores muy altos quiere decir que la señal está más presente que el ruido, lo que indica buena calidad de la misma. Si ocurre lo contrario, el ruido domina la señal y los valores son bajos, lo que indica que la señal es de mala calidad [1].
 
-![Ecuación SNR](imagenes/Ecuación.png)
+<img width="126" height="34" alt="Ecuación" src="https://github.com/user-attachments/assets/0cd0b9e0-d916-4042-8b5d-a4971bbbd382" />
 
 ## Análisis de la señal con adición de ruido y cálculo de la relación señal-ruido (SNR)
 
@@ -464,6 +464,9 @@ plt.ylabel("Amplitud")
 plt.grid(True)  
 plt.show()  
    ``` </pre>
+## Gráfica ruido Gaussiano
+
+<img width="649" height="296" alt="image" src="https://github.com/user-attachments/assets/e0237c14-ae98-4fad-9acd-123d555c7e7d" />
 
 ## Análisis ruido Gaussiano
 
@@ -495,6 +498,10 @@ plt.grid(True)
 plt.show()  
    ``` </pre>
 
+## Gráfica ruido impulso
+
+<img width="652" height="297" alt="image" src="https://github.com/user-attachments/assets/c695c258-ce32-4ab3-91f7-a48384abfe00" />
+
 ## Análisis ruido impulso
 
 Debido a los picos se puede ver una anormalidad más fácilmente en una de las muestras. Este ruido podría simular malas conexiones del ECG, por ejemplo, electrodos mal conectados, movimiento brusco de los cables u otros factores. También se puede interpretar como complejos falsos.  
@@ -525,6 +532,10 @@ plt.grid(True)
 plt.show()  
    ``` </pre>
 
+## Gráfica del ruido tipo artefacto
+
+<img width="1302" height="599" alt="image" src="https://github.com/user-attachments/assets/e8b3dbe1-b3c9-4932-a647-b32552ee131e" />
+
 ## Análisis del ruido tipo artefacto
 
 Este ruido tipo artefacto en el código simula una "onda senoidal lenta" que está superpuesta en el ECG original, lo que genera una oscilación de baja frecuencia. Este patrón se podría interpretar como fenómenos respiratorios normales del tórax, impedancia de la piel o desplazamientos del electrodo. En esta gráfica se dificulta la clara identificación de las ondas P y T y se aprecia una modificación en el complejo QRS. Aunque no se distorsiona de forma drástica, sí se compromete el análisis de las tendencias y se genera error en la interpretación clínica, lo cual es importante para el diagnóstico de enfermedades cardíacas.  
@@ -533,8 +544,13 @@ Respecto al ruido resultante (29.22 dB), este es el mejor comparado con los dos 
 
 ## Análisis de los resultados - Parte C
 
-Esta simulación permitió observar cómo el ruido degrada la calidad de la señal según sus características estadísticas. También permitió identificar de qué tipo de ruido se trata para tener precaución en futuros análisis de señales electrocardiográficas.
-
+Esta simulación permitió observar cómo el ruido degrada la calidad de la señal según sus características estadísticas. También permitió identificar de qué tipo de ruido se trata para tener precaución en futuros análisis de señales electrocardiográficas. Resultados finales:
+<pre>
+   === Relación Señal-Ruido (SNR) ===
+Ruido Gaussiano: 24.22 dB
+Ruido de Impulso: 14.32 dB
+Ruido tipo Artefacto: 29.22 dB
+</pre>
 
 # REFERENCIAS
 
