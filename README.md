@@ -436,7 +436,7 @@ Por último, la **curtosis** indicó que la distribución presenta colas más pr
 ## Relación Señal Ruido (SNR)
 
 Esta relación es entre la amplitud de la señal y la amplitud del ruido. Generalmente está expresada en decibelios y se calcula mediante una sencilla ecuación. Implementar esta ecuación es muy importante para analizar una señal de ECG, en donde el ruido no deseado interfiere con la señal de interés. Cuando esta señal tiene valores muy altos quiere decir que la señal está más presente que el ruido, lo que indica buena calidad de la misma. Si ocurre lo contrario, el ruido domina la señal y los valores son bajos, lo que indica que la señal es de mala calidad [1].
-
+<p align="center">
 <img width="126" height="34" alt="Ecuación" src="https://github.com/user-attachments/assets/0cd0b9e0-d916-4042-8b5d-a4971bbbd382" />
 
 ## Análisis de la señal con adición de ruido y cálculo de la relación señal-ruido (SNR)
@@ -465,7 +465,7 @@ plt.grid(True)
 plt.show()  
    ``` </pre>
 ## Gráfica ruido Gaussiano
-
+<p align="center">
 <img width="649" height="296" alt="image" src="https://github.com/user-attachments/assets/e0237c14-ae98-4fad-9acd-123d555c7e7d" />
 
 ## Análisis ruido Gaussiano
@@ -499,7 +499,7 @@ plt.show()
    ``` </pre>
 
 ## Gráfica ruido impulso
-
+<p align="center">
 <img width="652" height="297" alt="image" src="https://github.com/user-attachments/assets/c695c258-ce32-4ab3-91f7-a48384abfe00" />
 
 ## Análisis ruido impulso
@@ -533,7 +533,7 @@ plt.show()
    ``` </pre>
 
 ## Gráfica del ruido tipo artefacto
-
+<p align="center">
 <img width="1302" height="599" alt="image" src="https://github.com/user-attachments/assets/e8b3dbe1-b3c9-4932-a647-b32552ee131e" />
 
 ## Análisis del ruido tipo artefacto
@@ -561,5 +561,19 @@ Ruido tipo Artefacto: 29.22 dB
 [3] L. Sibley, “Common carrier transmission,” in Elsevier eBooks, 2002, pp. 18–38, doi: 10.1016/b978-075067291-7/50040-6.[Accedido: 18-ago-2025]
 
 [4] Zeto Inc., “How Digital EEG Filters Impact EEG Signal Morphology,” *Zeto Inc. Blog*, [En línea]. Disponible en: https://zeto-inc.com/blog/eeg-signal-enhancement-digital-eeg-filters/. [Accedido: 18-ago-2025].
+
+# DIAGRAMAS DE FLUJO 
+
+## Parte A
+<p align="center">
+<img width="960" height="1280" alt="Imagen de WhatsApp 2025-08-19 a las 21 17 36_03a57746" src="https://github.com/user-attachments/assets/e40b1334-ad1c-4cc4-acc7-2bb35ba6b625" />
+   
+## Parte B
+<p align="center">
+<img width="960" height="1280" alt="Imagen de WhatsApp 2025-08-19 a las 21 17 36_b9e27185" src="https://github.com/user-attachments/assets/3f7823e2-b7b6-445b-9f45-179cd02de9eb" />
+   
+## Parte C
+<p align="center">
+<img width="520" height="495" alt="Captura de pantalla 2025-08-19 212646" src="https://github.com/user-attachments/assets/2fa54fd6-7dcf-4a71-9392-e104b8002909" />
 
 
